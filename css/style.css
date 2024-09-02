@@ -1,0 +1,1143 @@
+@import url("base.css");
+
+
+/* Header e Nav 
+header{
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo{
+    width: 120px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.hamburguer{
+    display: none;
+    border: none;
+    font-size: 30px;
+}
+
+#nav-lista{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: var(--cinza-escuro);
+    transition: 300ms;
+}
+
+.nav-link:hover{
+    color: var(--azul);
+}
+
+#nav-link-last{
+    color: var(--azul);
+    transition: 300ms;
+}
+
+#nav-link-last:hover{
+    color: var(--verde);
+}
+
+*/
+
+
+/* Início */
+.inicio {
+    width: 100%;
+    height: 462px;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    color: var(--verde);
+
+}
+
+.titulo-span {
+    color: var(--verde);
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+    width: 420px;
+    color: var(--azul);
+    text-align: center;
+    font-size: 23px;
+}
+
+.inicio-botoes-container {
+    display: flex;
+    gap: 15px
+}
+
+.botao {
+    padding: 11px 15px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    transition: 300ms;
+}
+
+.botao:hover{
+    transform: scale(1.05);
+}
+
+.botao-agendamento {
+    background-color: var(--branco);
+    color: var(--verde);
+}
+
+
+.botao-saiba-mais {
+    background-color: var(--cinza);
+}
+
+/* Sobre mim */
+.sobre-mim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    padding: 50px;
+    gap: 50px;
+}
+
+.sobre-mim-images img{
+    max-width: 500px;
+    width: 100%;
+    max-height: 900px;
+    height: 100%;
+    border-radius: 25px;
+    transition: 300ms;
+}
+
+.sobre-mim-images img:hover{
+    opacity: 0.9;
+    transform: scale(1.03);
+}
+
+.sobre-mim-textos{
+    width: 50%;
+}
+
+.sobre-mim-textos h2{
+    margin-bottom: 30px;
+    color: var(--branco);
+    font-family: "Anton", sans-serif;
+    font-size: 50px;
+}
+
+.sobre-mim-textos p{
+    text-align: justify;
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.buttons-sobre-mim{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+/* Especialidades */
+.especialidades {
+    padding: 100px;
+    background-color: var(--branco);
+    text-align: center;
+    letter-spacing: -.5px;
+    line-height: 1.4em;
+}
+
+.especialidades-titulo {
+    margin-bottom: 70px;
+    color: var(--verde);
+    font-size: 50px;
+}
+
+.especialidades-items {
+    margin: 0 auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+}
+
+.especialidade {
+    width: min(100%, 300px);
+    text-align: start;
+}
+
+.expecialidade-imagem-container {
+    margin-bottom: 30px;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.especialidade-imagem {
+    width: 100%;
+}
+
+.especialidade-nome {
+    margin-bottom: 10px;
+    color: var(--verde);
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.especialidade-descricao {
+    color: var(--verde);
+    font-size: 20px;
+}
+
+/* Beneficios */
+.beneficios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verde);
+    padding: 50px;
+    gap: 50px;
+}
+
+.subtitulo-projetos{
+    font-weight: bolder;
+    font-size: 19px;
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+/* Como Funciona */
+section.info {
+    font-family: 'Poppins', sans-serif;
+    background-color: #76C893;
+}
+
+.Como-Funciona {
+    padding: 0px 94px;
+    padding-top: 40px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Como-Funciona h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+}
+
+
+
+.divcards {
+    padding-bottom: 80px;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+    display: flex;
+    padding: 0.5rem;
+
+    @media(min-width: 40rem) {
+        width: 50%;
+    }
+
+
+    @media(min-width: 56rem) {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 5px;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+
+    &::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+    @media(min-width: 40rem) {
+        &::before {
+            padding-top: 66.6%;
+        }
+    }
+}
+
+.card__image--um {
+    background-image: url("../images/modalidade.png");
+}
+
+.card__image--dois {
+    background-image: url("../images/ricardogadelha.png");
+}
+
+.card__image--tres {
+    background-image: url("../images/flexibilidade.png");
+}
+
+.card__title {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+
+.card__text {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    color: #2F2F2F;
+}
+
+.botao-comofunciona{
+
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+
+button.orcamento {
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: white;
+    background-color: #184E77;
+    padding: 10px;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 1px 7px 24px -9px rgba(0, 0, 0, 0.75);
+    transition: 300ms;
+}
+
+button.orcamento:hover{
+
+    transform: scale(1.05);
+
+}
+
+button.orcamento a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+
+/* */
+
+/* Footer */
+footer{
+    padding: 60px 40px 30px 60px;
+}
+/* Primeira parte */
+.footer-sec{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--cinza-escuro2);
+}
+
+.footer-content div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-info{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+}
+
+/* Linha divisória */
+#footer-linha-divisoria{
+    width: 100%;
+    height: 1px;
+    background-color: var(--cinza);
+    margin: 60px 0 30px 0;
+}
+
+/* Segunda parte */
+.footer-copy{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--cinza-escuro);
+}
+
+.footer-redes-sociais{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon{
+    width: 20px;
+    height: 20px;
+    color: var(--preto);
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width: 390px) {
+    /* Header e Nav 
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .first-parte{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+    }
+
+    .hamburguer{
+        display: block;
+        font-size: 50px;
+    }
+
+    #abrirMenu{
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 60px;
+    }
+
+    #fecharMenu{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+        width: 100%;
+    }
+
+    #nav-lista{
+        padding-left: 30px;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 25px;
+    }
+
+    */
+
+    /* Início */
+    .inicio {
+        height: 300px;
+        padding-bottom: 30px;
+    }
+
+    .titulo {
+        width: 200px;
+        font-size: 26px;
+    }
+
+    .subtitulo {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .botao {
+        padding: 8px;
+        height: 35px;
+    }
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+    /* Especialidades */
+    .especialidades {
+        padding: 25px;
+    }
+
+    .especialidades-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .especialidades-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidade {
+        margin: 0 auto;
+        width: 250px;
+        margin-bottom: 35px;
+    }
+    
+    .expecialidade-imagem-container {
+        margin: 0 auto 25px;
+        width: 250px;
+        height: 250px
+    }
+
+    .especialidade-nome {
+        margin-bottom: 7.5px;
+        font-size: 20px;
+    }
+
+    .especialidade-descricao {
+        font-size: 16px;
+    }
+
+    /* Como funciona */
+    .Como-Funciona {
+        padding: 0px 25px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    /* Como funciona */
+
+
+    /* Footer */
+    /* Primeira parte */
+    .footer-sec{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-content{
+        width: auto;
+    }
+
+    #footer-sec2{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 459px) {
+    /* Header e Nav 
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .first-parte{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 48px;
+    }
+
+    .hamburguer{
+        display: block;
+        font-size: 50px;
+    }
+
+    #abrirMenu{
+        display: block;
+        position: absolute;
+        right: 48px;
+        top: 80px;
+    }
+
+    #fecharMenu{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+        width: 100%;
+    }
+
+    #nav-lista{
+        padding-left: 24px;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 25px;
+    }
+
+    */
+
+    /* Início */
+    .inicio {
+        height: 310px;
+        padding-bottom: 40px;
+    }
+
+    .titulo {
+        width: 200px;
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .botao {
+        padding: 8px;
+        height: 35px;
+    }
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+
+    /* Especialidades */
+    .especialidades {
+        padding: 25px;
+    }
+
+    .especialidades-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .especialidades-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidade {
+        margin: 0 auto;
+        width: 300px;
+        margin-bottom: 35px;
+    }
+    
+    .expecialidade-imagem-container {
+        margin: 0 auto 25px;
+        width: 300px;
+        height: 300px
+    }
+
+    .especialidade-nome {
+        margin-bottom: 7.5px;
+        font-size: 22px;
+    }
+
+    .especialidade-descricao {
+        font-size: 18px;
+    }
+
+    /* Como funciona */
+    .Como-Funciona {
+        padding: 0px 40px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    /* Como funciona */
+
+
+    /* Footer */
+    /* Primeira parte */
+    .footer-sec{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #footer-sec2{
+        flex-direction: row;
+    }
+
+    .footer-content{
+        width: auto;
+    }
+}
+
+/* Media query extra para: Header, Nav e Footer*/
+@media only screen and (min-width: 460px) and (max-width: 505px) {
+    /* Header e Nav 
+    #nav-lista{
+        padding-left: 24px;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 32px;
+    }
+
+    */
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+    /* Como funciona */
+    .Como-Funciona {
+        padding: 0px 70px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    /* Como funciona */
+
+
+    /* Footer */
+    .footer-sec{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-content{
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 459px) and (max-width: 599px) {
+    /* Header e Nav 
+    header{
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .first-parte{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 48px;
+    }
+
+    .hamburguer{
+        font-size: 50px;
+    }
+
+    #abrirMenu{
+        display: block;
+        position: absolute;
+        right: 48px;
+        top: 80px;
+    }
+
+    #fecharMenu{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+        width: 100%;
+    }
+
+    #nav-lista{
+        padding-left: 24px;
+        flex-direction: column;
+    }
+
+    .nav-link{
+        font-size: 32px;
+    }
+
+    */
+
+    /* Início */
+    .inicio {
+        height: 310px;
+        padding-bottom: 40px;
+    }
+
+    .titulo {
+        width: 200px;
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .botao {
+        padding: 8px;
+        height: 35px;
+    }
+
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+
+    /* Especialidades */
+    .especialidades {
+        padding: 40px;
+    }
+
+    .especialidades-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .especialidades-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidade {
+        margin: 0 auto;
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    
+    .expecialidade-imagem-container {
+        margin: 0 auto 25px;
+        width: 300px;
+        height: 300px
+    }
+
+    .especialidade-nome {
+        margin-bottom: 7.5px;
+        font-size: 22px;
+    }
+
+    .especialidade-descricao {
+        font-size: 18px;
+    }
+
+    /* Como Funciona */
+    .Como-Funciona {
+        padding: 0px 83px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    /* Como Funciona */
+
+    /* Footer */
+    #footer-sec2{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 599px) and (max-width: 766px) {
+    /* Header 
+    header{
+        flex-direction: column;
+    }
+
+    */
+
+    /* Início */
+    .inicio {
+        height: 330px;
+        padding-bottom: 0;
+    }
+
+    .titulo {
+        width: 500px;
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        width: 450px;
+        font-size: 18px;
+    }
+
+    .botao {
+        padding: 8px;
+        height: 35px;
+    }
+
+    
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+    /* Especialidades */
+    .especialidades {
+        padding: 40px;
+    }
+
+    .especialidades-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .especialidades-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .especialidade {
+        margin: 0 auto;
+        width: 525px;
+        height: 300px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        gap: 20px
+    }
+    
+    .expecialidade-imagem-container {
+        margin: 0;
+        width: 240px;
+        height: 240px
+    }
+
+    .especialidade-texto {
+        width: 265px
+    }
+
+    .especialidade-nome {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .especialidade-descricao {
+        font-size: 18px;
+    }
+
+    /* Como Funciona */
+
+    .Como-Funciona {
+        padding: 0px 35px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards{
+
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    /* Início */
+    .inicio {
+        height: 330px;
+        padding-bottom: 0;
+    }
+
+    .titulo {
+        width: 500px;
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        width: 450px;
+        font-size: 18px;
+    }
+
+    .botao {
+        padding: 8px;
+        height: 35px;
+    }
+
+    /* Sobre mim */
+    .sobre-mim{
+        flex-direction: column;
+    }
+
+    .sobre-mim-textos{
+        width: 100%;
+    }
+
+    /* Especialidades */
+    .especialidades {
+        padding: 30px;
+    }
+
+    .especialidades-titulo {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    .especialidades-items {
+        margin: 0 auto;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+
+    .especialidade {
+        width: 210px;
+    }
+    
+    .expecialidade-imagem-container {
+        width: 210px;
+    }
+
+    .especialidade-texto {
+        width: 210px
+    }
+
+    .especialidade-nome {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .especialidade-descricao {
+        font-size: 16px;
+    }
+
+    /* Como Funciona */
+    .Como-Funciona {
+        padding: 0px 25px;
+        padding-top: 40px;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .cards{
+
+        flex-wrap: nowrap;
+    
+    }
+
+}
